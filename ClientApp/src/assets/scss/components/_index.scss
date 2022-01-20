@@ -1,0 +1,622 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f6f6fa;
+  color: white;
+  font-family: 'Montserrat Alternates', sans-serif !important;
+}
+
+header {
+  padding: 0 50px;
+  background-color: inherit;
+  height: 85px;
+  justify-content: space-between;
+}
+
+small{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 115.5%;
+  letter-spacing: 0.025em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.header__bg-color{
+  background-color:white;
+}
+
+header a {
+  text-decoration: none;
+}
+
+#brand {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+
+}
+
+#brand a {
+  color: #09c372;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color: #000000;
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+
+.nav__li{
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 18px;
+}
+  
+.active{
+    background-color: #800080;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+.main__container__bg{
+    width: 100%;
+    display: flex;
+    /* background-color: red; */
+}
+
+.main__container__bg__aside{
+    flex-grow: 1;
+    padding: 50px;
+    margin-top: 10%;
+}
+
+.main__container__bg__aside h4{
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 115.5%;
+  text-align: center;
+  letter-spacing: 0.025em;
+  color: #000000;
+}
+
+.main__container__bg__aside p{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  color: #000000;
+  margin-top: 4%;
+}
+
+.main__container__bg__aside--btn{
+  font-family: Montserrat Alternates;
+  width: 200px;
+  height: 55px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 115.5%;
+  border: 0;
+  text-align: center;
+  letter-spacing: 0.025em;
+  color: #800080;
+  cursor: pointer;
+  margin-top: 4%;
+}
+
+input{
+  width: 450px;
+  height: 55px;
+  left: 0px;
+  top: 22px;
+  background: white;
+  border-radius: 6px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  margin-bottom: 10%;
+  border: 1px solid white;
+  font-size: 17px;
+  padding: 0 10px;
+  outline: none;
+  font-family: Montserrat Alternates;
+}
+
+
+label{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 115.5%;
+  letter-spacing: 0.025em;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: left !important;
+  margin: 4px 0px;
+}
+
+.main__container__feature{
+  background-color: whitesmoke;
+}
+
+.main__container__feature h4{
+  font-family: Montserrat Alternates;
+  font-style: revert;
+  font-weight: bold;
+  font-size: 49px;
+  line-height: 115.5%;
+  text-align: center;
+  letter-spacing: 0.025em;
+  color: #800080;
+  padding: 20px 0px;
+}
+
+.main__container__feature__content{
+  display: flex;
+  padding: 1% 3%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.main__container__feature__content a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 398px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 25px 16px;
+  background: #800080a6;
+}
+
+.container h4{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 115.5%;
+  text-align: left !important;
+  letter-spacing: 0.025em;
+  color: #800080;
+  margin-bottom: 0%;
+}
+
+.container h6{
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 115.5%;
+  letter-spacing: 0.025em;
+  margin-bottom: 10px;
+}
+
+.container h6,
+.container p{
+  color: black;
+}
+
+.container .card__star{
+  text-align: end;
+  color: #F9DD48;
+}
+
+.main__container__how-it-works{
+  padding: 3%;
+}
+
+.main__container__how-it-works__header h4{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 115.5%;
+  letter-spacing: 0.025em;
+  color: #800080;
+}
+
+.instruction{
+  display: flex;
+  justify-content: space-between;
+}
+
+.instruction h4{
+  width: 416px;
+}
+
+.instruction p{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 115.5%;
+  width: 416px;
+  letter-spacing: 0.025em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.main__container__how-it-works__mthd{
+  padding: 3%; 
+}
+
+.register__section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.register__section div{
+  width: 347px;
+  height: 213px;
+  left: 105px;
+  top: 2110px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 11px;
+  padding: 3%;
+}
+
+.register__section div h5{
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 115.5%;
+  margin-bottom: 6%;
+  text-align: right;
+  letter-spacing: 0.025em;
+  color: #800080;
+}
+
+.register__section div p{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 115.5%;
+  text-align: right;
+  letter-spacing: 0.025em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.main__container__how-it-works__mthd svg{
+  background-color: #E1CDE4;
+  padding: 7px;
+}
+
+.mini__about__container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mini__about__container img{
+  max-width: 100%;
+  width: 70%;
+}
+
+.mini__about__content{
+  width: 35%;
+}
+
+.mini__about__content h5{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  letter-spacing: 0.025em;
+  color: #3A0F2D;
+  margin: 4% 0;
+}
+
+.mini__about__content p{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 115.5%;
+  letter-spacing: 0.025em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.mini__testimonial__container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mini__testimonial__contentOne{
+  width: 35%;
+}
+
+.mini__testimonial__contentOne h5{
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 115.5%;
+  letter-spacing: 0.025em;
+  color: #800080;
+  margin: 4% 0;
+}
+
+.mini__testimonial__contentOne p{
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 115.5%;
+  letter-spacing: 0.025em;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 3% 0;
+}
+
+.mini__testimonial__contentTwo {
+  text-align: end;
+}
+
+.mini__testimonial__contentTwo img{
+  max-width: 100%;
+  width: 70%;
+}
+
+.testimonial{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.testimonial img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.testimonial .title{
+  font-family: Montserrat Alternates;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 115.5%;
+  margin-top: 30px;
+  letter-spacing: 0.025em;
+  color: #800080;
+}
+
+
+footer{
+  background-color:#3A0F2D;
+}
+
+.footer__container{
+  display: flex;
+  padding: 4% 4% 10%;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer__container p{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 115.5%;
+  letter-spacing: 0.025em;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.footer__container button{
+  font-family: Montserrat Alternates;
+  width: 90%;
+  padding: 4%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 115.5%;
+  letter-spacing: 0.025em;
+  color: #000000;
+  cursor: pointer;
+}
+
+.logo__img--sm{
+  display:none
+}
+
+@media only screen and (max-width: 600px) {
+  .logo__img--sm{
+    display:block;
+  }
+
+  .logo__img__lg{
+    display:none;
+  }
+
+  header {
+    padding: 0 26px;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+
+  #hamburger-icon div {
+    background-color: black;
+}
+
+  .mobile-menu{
+    background-color: #800080;
+    padding: 150px 0;
+    margin-top: 30px;
+  }
+
+  .mobile-menu li{
+    padding: 9px;
+  }
+
+  .mobile-menu li a{
+    font-size: 32px;
+  }
+
+  .instruction{
+    display: none;
+  }
+
+  .main__container__how-it-works__mthd svg{
+    display: none;
+  }
+
+  input{
+    width: 100%;
+  }
+
+  .card{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .card img{
+    width: 100%;
+  }
+
+  .main__container__feature h4{
+    font-size: 30px;
+  }
+
+  .main__container__bg__aside p {
+    font-size: 16px;
+    line-height: 23px;
+}
+
+  .main__container__feature__content a {
+    width: 100%;
+  }
+
+  .main__container__bg__image img{
+    display: none;
+  }
+
+  .mini__about__container img{
+    display: none;
+  }
+
+  .mini__about__content,
+  .mini__testimonial__container{
+    display:none;
+    width: 100%;
+  }
+
+  .mini__testimonial__contentTwo img{
+    display: none;
+  }
+
+  .mini__testimonial__contentOne {
+    width: 100%;
+  }
+
+  .main__container__feature__content {
+    padding: 0 3%;
+    width: 100%;
+  } 
+
+  .main__container__bg__aside h4 {
+    font-size: 45px;
+  }
+
+  .main__container__bg__aside--btn{
+    display: none;
+  }
+
+  .register__section div h5,
+  .register__section div p{
+    text-align: justify;
+  }
+}
+
+
+
